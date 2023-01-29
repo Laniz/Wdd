@@ -8,7 +8,7 @@ nav a{
     text-decoration: none;
 }
 nav a:hover{
-    background-color: #e39316;
+    background-color: black;
     color: white;
 }
 .home-title{
@@ -55,7 +55,7 @@ header{
     color: white;
 }
 .book:hover{
-    background-color: #e39316;
+    background-color: black;
     color: white;
 }
 /* #background{
@@ -83,7 +83,7 @@ footer a{
     text-decoration: none;
 }
 footer a:hover{
-    background-color: #1b6db6;
+    background-color: black;
     color: white;
 }
 footer p {
