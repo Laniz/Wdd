@@ -58,11 +58,12 @@ header{
     background-color: #e39316;
     color: white;
 }
-#background{
-    color: red;
-}
+/* #background{
+    color: red; */
+/* } */
 .msg{
     color: #34a6dc;
+    background-color:#e39316;
 }
 h4{
     color:black;
