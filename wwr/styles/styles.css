@@ -83,6 +83,7 @@ header{
     background-color:#e39316;
     line-height: 1.5em;
     padding: 35px;
+    
 }
 h4{
     color:black;
@@ -128,8 +129,12 @@ footer .social img{
 h2{
     margin: 0;
 }
-#logolink{
+#logo_link{
     padding-top: 5px;
+    
+}
+.logo{
+    width: 80px;
 }
 .rivers-card{
     margin: 200px 0;
