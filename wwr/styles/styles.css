@@ -83,7 +83,8 @@ header{
     background-color:#e39316;
     line-height: 1.5em;
     padding: 35px;
-    
+    /* margin-top: 200000; */
+
 }
 h4{
     color:black;
@@ -136,12 +137,24 @@ h2{
 .logo{
     width: 80px;
 }
+.card-image{
+    border: 10px solid #e39316;
+    margin-top: 200px;
+}
 .rivers-card{
     margin: 200px 0;
 }
 .camping-card{
-    margin: 200px 0;
+    margin-top: 200px;
 }
 .rapids-card{
     margin: 200px 0;
+}
+
+
+/* changes that i made */
+.mountains{
+    margin-top: 200px;
+    margin-bottom: 200px;
+    
 }
