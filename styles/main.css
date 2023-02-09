@@ -63,14 +63,14 @@ p {
 a{
     /* text-decoration: underline dotted rgb(12, 65, 17); */
     text-decoration: none;
-    color: rgb(217, 0, 0);
+    color: blue;
     padding: 5px;
-    background-color: black;
+    
 }
 a:hover{
-    background-color: rgba(0, 0, 0, 0.7);
+    background-color: black;
     border: 3px solid rgb(0, 48, 0);
-    color: white;
+    color: rgb(217, 0, 0);
     text-decoration: none;
 
 }
