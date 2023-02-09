@@ -28,20 +28,22 @@ nav{
     text-align: center;
     padding: 20px;
     font-size: 0.7em;
+    color: white;
 }
 nav a{
     text-decoration: none;
     padding: 10px;
     background-color: rgb(12, 65, 17);
-    color: white;
     margin: 5px;
     border-radius: 34px;
+    color: white;
 
 }
 
 nav a:hover{
     background-color: rgba(12, 65, 17, .7);
     border: 3px solid rgb(0, 48, 0);
+    color: white;
 
 }
  img {
