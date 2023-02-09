@@ -75,6 +75,7 @@ a:hover{
     border: 3px solid rgb(0, 48, 0);
     color: rgb(217, 0, 0);
     text-decoration: none;
+    border-radius: 5px;
 
 }
 
