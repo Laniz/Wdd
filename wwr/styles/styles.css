@@ -110,6 +110,7 @@ header{
     color: white;
 }
 
+
 .msg{
     color: #34a6dc;
     background-color:#e39316;
@@ -162,7 +163,7 @@ footer .social img{
     padding-top: 15px;
 }
 .icon{
-    width: 80px;
+    width: 50px;
     padding-top: 10px;
 }
 #hero-img{
@@ -181,7 +182,7 @@ h2{
     width: 80px;
     
 }
-.card-image{
+.card-img{
     border: 10px solid #e39316;
     margin-top: 200px;
     width: 100%;
