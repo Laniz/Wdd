@@ -48,7 +48,8 @@ nav a:hover{
     text-align: center;
 }
 #hero-msg h4{
-    text-align: center
+    text-align: center;
+    color: #1b6db6;
 }
 .button-box{
     text-align: center;
@@ -79,7 +80,7 @@ header{
     color: white;
     display: grid;
     grid-template-columns: 150px auto;
-    background-color:rgba(255, 202, 117, 0.2)
+    background-color:rgba(255, 202, 117, 0.4)
 }
 
 .book{
