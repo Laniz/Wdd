@@ -63,10 +63,10 @@ main section img{
 #background{
     height: 725px;
     /* color:#34a6dc; */
-    background-color: #34a6dc;
-    grid-column: 1/11;
+    background-color: #1b6db6;
+     grid-column: 1/11;
     grid-row: 4/9;
-    display: none;
+    
 }
 body{
     color: black;
