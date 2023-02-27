@@ -85,18 +85,22 @@ main section img{
     grid-row: 4/9;
     
 }
+.navbar-fixed-top.scrolled {
+    background-color: #fff !important;
+    transition: background-color 200ms linear;
+  }
 body{
     /* padding-top: 100px; */
     color: black;
     background-color: #d3eaff;
     margin: 0;
-    padding-top: 100px;
+    /* padding-top: 100px; */
     transition: all 1s ease;
 }
 header{
-    position: fixed;
+    /* position: fixed;
     top: 0;
-    width: 100%;
+    width: 1600px; */
     
     color: white;
     display: grid;
