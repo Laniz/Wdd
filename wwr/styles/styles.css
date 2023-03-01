@@ -21,6 +21,7 @@ nav {
     
     display:flex;
     justify-content: space-around;
+    color: white;
     
 }
 nav a{
@@ -29,6 +30,8 @@ nav a{
     text-decoration: none;
     padding: 35px;
     font-size: 1.2em;
+    display: block;
+    padding: 15px;
 }
 nav a:hover{
     background-color: black;
@@ -105,7 +108,7 @@ header{
     color: white;
     display: grid;
     grid-template-columns: 150px auto;
-    background-color:rgba(255, 202, 117, 0.4)
+    background-color:#e39316
 }
 
 .book{
@@ -264,10 +267,7 @@ h2{
     nav, footer {
         flex-direction: column;
     }
-    nav a {
-        display: block;
-        padding: 15px;
-    }
+   
     #hero {
         margin-top: 0;
     }
