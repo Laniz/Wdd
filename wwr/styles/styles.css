@@ -22,19 +22,25 @@ nav {
     display:flex;
     justify-content: space-around;
     color: white;
+    padding: 25px 50px;
+    margin-top: px;
+    
     
 }
 nav a{
     text-align: center;
     color: white;
     text-decoration: none;
-    padding: 35px;
-    font-size: 1.2em;
+    
+    font-size: 1.3em;
     display: block;
-    padding: 15px;
+    padding: 15px 30px;
+    margin-top: 0;
+    border-radius: 5px;
+    
 }
 nav a:hover{
-    background-color: black;
+    background-color: #1b6db6;
     color: white;
 }
 
@@ -65,10 +71,13 @@ nav a:hover{
 }
 #hero-msg h1{
     text-align: center;
+    color: white;
+    font-size: 2.5em;
 }
 #hero-msg h4{
     text-align: center;
-    color: #1b6db6;
+    color: white;
+    font-size: 1.3em;
 }
 .button-box{
     text-align: center;
@@ -109,6 +118,9 @@ header{
     display: grid;
     grid-template-columns: 150px auto;
     background-color:#e39316
+        
+    
+
 }
 
 .book{
@@ -158,11 +170,12 @@ h4{
     color:black;
 }
 .msg h2{
-    color:#1b6db6;
+    color:white;
+    font-size: 1.7em;
 }
 .msg p{
     color:white;
-    font-size: 1.1em;
+    font-size: 1.0em;
     padding-bottom: 15px;
 }
 footer{ 
@@ -178,17 +191,22 @@ footer a{
     color:white;
     text-decoration: none;
     font-family: var(--heading-font);
+    padding: 15px 30px;
+    margin-top: 50px;
+    border-radius: 5px;
+    font-size: 1.3em;
 }
 footer a:hover{
-    background-color: black;
+    background-color: #1b6db6;
     color: white;
+    
 }
 footer p {
     font-size: 1.2em;
 }
-footer p a:hover {
+/* footer p a:hover {
     text-decoration: underline;
-}  
+}   */
 footer .social img{
     padding-top: 15px;
 }
