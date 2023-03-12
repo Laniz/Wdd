@@ -27,7 +27,20 @@ header{
     display: grid;
     grid-template-columns: 150px auto;
     background-color: #202a25;
+    
 }
+
+
+div.sticky {
+    position: -webkit-sticky;
+    position: sticky;
+    top: 0;
+    /* background-color: yellow;
+    padding: 50px;
+    font-size: 20px; */
+  }
+
+
 
 #logo_link{
     padding-top: 5px;
@@ -53,6 +66,8 @@ header{
     grid-template-columns: 1fr 3fr 1fr;
     
 }
+
+
 
 #hero-box{
     grid-column: 1/4;
