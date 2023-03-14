@@ -301,7 +301,8 @@ footer a:hover{
   }
 
   .active, .accordion:hover {
-    background-color: red;
+    background-color: #a43312;
+    color: white;
   }
 
   .panel {
@@ -340,7 +341,11 @@ footer a:hover{
     background-color: transparent;
     width: 640px;
     height: 427px;
-    border: 1px solid #f1f1f1;
+    margin: 0px auto;
+    padding-bottom: 50px;
+    padding-top: 50px;
+    
+    /* border: 1px solid #5dd9c1; */
     perspective: 10000px; /* Remove this if you don't want the 3D effect */
   }
   
@@ -376,8 +381,134 @@ footer a:hover{
   
   /* Style the back side */
   .flip-card-back {
-    background-color: dodgerblue;
+    background-color: #202a25;
     color: white;
     transform: rotateY(180deg);
   }
   
+
+
+
+
+
+.faq-home{
+    background-color: #5dd9c1;
+    /* margin-top: -px; */
+}
+
+/* .faq-top-text{
+    text-align: center;
+    padding-top: 20px;
+    padding-bottom: 20px;
+} */
+
+/* .faq-mini-banner{
+    text-align: center;
+} */
+
+#faq-section{
+    
+    max-width: 800px;
+    display: block;
+    /* text-align: center; */
+    margin: 0px auto;
+    padding-top: 20px;
+}
+
+
+.parallax {
+    /* The image used */
+    background-image: url("https://i.ibb.co/Qvyhf4B/FAQ-image.jpg");
+  
+    /* Set a specific height */
+    min-height: 400px; 
+  
+    /* Create the parallax scrolling effect */
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+
+
+  form {
+    /* Center the form on the page */
+    margin: 100px auto;
+    width: 400px;
+    /* Form outline */
+    padding: 1em;
+    border: 1px solid white;
+    border-radius: 1em;
+  }
+  
+  ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+  
+  form li + li {
+    margin-top: 1em;
+  }
+  
+  label {
+    /* Uniform size & alignment */
+    display: inline-block;
+    width: 90px;
+    text-align: right;
+  }
+  
+  input,
+  textarea {
+    /* To make sure that all text fields have the same font settings
+       By default, textareas have a monospace font */
+    font: 1em sans-serif;
+  
+    /* Uniform text field size */
+    width: 300px;
+    box-sizing: border-box;
+  
+    /* Match form field borders */
+    border: 1px solid #999;
+  }
+  
+  input:focus,
+  textarea:focus {
+    /* Additional highlight for focused elements */
+    border-color: #000;
+  }
+  
+  textarea {
+    /* Align multiline text fields with their labels */
+    vertical-align: top;
+  
+    /* Provide space to type some text */
+    height: 5em;
+  }
+  
+  .button {
+    /* Align buttons with the text fields */
+    padding-left: 90px; /* same size as the label elements */
+  }
+  
+  button {
+    /* This extra margin represent roughly the same space as the space
+       between the labels and their text fields */
+    margin-left: 0.5em;
+  }
+  
+  
+  #feedback {
+      background-color: #202a25;
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      padding: .5em;
+      /* make this element invisible until we are ready for it */
+      display: none;   
+      color: white;   
+  }
+  .moveDown {
+      margin-top: 2em;
+  }
