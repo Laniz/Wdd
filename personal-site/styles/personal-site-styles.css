@@ -369,7 +369,7 @@ footer a:hover{
 .flip-card {
     background-color: transparent;
     width: 640px;
-    height: 427px;
+    height: 508px;
     margin: 0px auto;
     padding-bottom: 50px;
     padding-top: 50px;
@@ -404,8 +404,8 @@ footer a:hover{
   
   /* Style the front side (fallback if image is missing) */
   .flip-card-front {
-    background-color: #bbb;
-    color: black;
+    background-color: #E5E5E5;
+    color: #202a25;
   }
   
   /* Style the back side */
@@ -462,7 +462,7 @@ footer a:hover{
 
   form {
     /* Center the form on the page */
-    margin: 100px auto;
+    margin: 130px auto;
     width: 400px;
     /* Form outline */
     padding: 1em;
