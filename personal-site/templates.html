@@ -7,27 +7,21 @@
     <link type="text/css" rel="stylesheet" href="styles/personal-site-styles.css">
   </head>
 
-<body>
+  <body>
     <div id="content">
-
-      <div class="sticky">
-      <header>
-
+      <header id="navbar">
           <a id="logo_link" href="home-page.html">
               <img class="logo" src="Images/personal-logo.png" alt="Web Store Logo">
-          </a>
-
+            </a>
           <nav>
-              <a href="home-page.html">Home</a>
-              <a href="templates.html">Templates</a>
-              <a href="faq.html">FAQ</a>
+            <a href="home-page.html">Home</a>
+            <a href="templates.html">Templates</a>
+            <a href="faq.html">FAQ</a>
+           
             </nav>
-
         </header>
-
-      </div> 
-    </div>
-
+      </div>
+  
     
 
   <main class="templates-main">
@@ -103,6 +97,24 @@
 
   </footer>
 
+
+  <script src="scripts/main.js"></script>
+  
+
+  <script>
+
+    var prevScrollpos = window.pageYOffset;
+    window.onscroll = function() {
+    var currentScrollPos = window.pageYOffset;
+      if (prevScrollpos > currentScrollPos) {
+        document.getElementById("navbar").style.top = "0";
+      } else {
+        document.getElementById("navbar").style.top = "-100px";
+      }
+      prevScrollpos = currentScrollPos;
+    }
+    </script>
+    
 </body>
 </html>
 

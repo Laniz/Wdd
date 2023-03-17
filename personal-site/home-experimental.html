@@ -1,34 +1,53 @@
 <!DOCTYPE html>
 <html>
-<head>
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<style>
-.parallax {
-  /* The image used */
-  background-image: url("https://i.ibb.co/Qvyhf4B/FAQ-image.jpg");
+  <head>
+    <title>Automatic Slideshow with Slide Transition Effect</title>
+    <style>
+      #slideshow-container {
+        position: relative;
+        overflow: hidden;
+        width: 500px;
+        height: 300px;
+      }
 
-  /* Set a specific height */
-  min-height: 400px; 
+      #slideshow-container img {
+        position: absolute;
+        top: 0;
+        left: 0;
+        z-index: 1;
+        transition: left 1s;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="slideshow-container">
+      <img src="Images/fluid-demo-template.png">
+      <img src="Images/food-blog-template.png">
+      <img src="Images/make-up-shop-template.png">
+    </div>
+    <script>
+      var container = document.getElementById("slideshow-container");
+      var images = container.getElementsByTagName("img");
+      var index = 0;
 
-  /* Create the parallax scrolling effect */
-  background-attachment: fixed;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: 600px;
-}
-</style>
-</head>
-<body>
+      for (var i = 0; i < images.length; i++) {
+        images[i].style.left = (i * 100) + "%";
+      }
 
-<p>Scroll Up and Down this page to see the parallax scrolling effect.</p>
+      function changeImage() {
+        var nextPosition = -(index * 100) + "%";
+        images[index].style.left = "100%";
+        index++;
+        if (index >= images.length) {
+          index = 0;
+        }
+        images[index].style.left = "0";
+        setTimeout(function() {
+          images[index - 1].style.left = "100%";
+        }, 1000);
+      }
 
-<div class="parallax"></div>
-
-<div style="height:1000px;background-color:red;font-size:36px">
-Scroll Up and Down this page to see the parallax scrolling effect.
-This div is just here to enable scrolling.
-Tip: Try to remove the background-attachment property to remove the scrolling effect.
-</div>
-
-</body>
+      setInterval(changeImage, 3000);
+    </script>
+  </body>
 </html>

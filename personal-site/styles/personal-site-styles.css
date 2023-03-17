@@ -48,11 +48,27 @@ nav a:hover{
 }
 header{
     
-    color: white;
-    display: grid;
-    grid-template-columns: 150px auto;
-    background-color: #202a25;
+  color: white;
+  display: grid;
+  grid-template-columns: 150px auto;
+  background-color: #202a25;
+  z-index: 99;
+  
+  
     
+    
+}
+
+#navbar{
+  position: fixed;
+  transition: top 0.3s;
+  top: 7px;
+  width: 100%;
+  /* padding-right: -50px; */
+}
+
+body{
+  width: 100%;
 }
 
 
@@ -234,7 +250,7 @@ footer a:hover{
     grid-template-columns: repeat(2, 1fr);
     background-color: #5dd9c1;
     padding-left: 80px;
-    padding-top: 50px;
+    padding-top: 170px;
     padding-bottom: 50px;
     row-gap: 70px;
     
