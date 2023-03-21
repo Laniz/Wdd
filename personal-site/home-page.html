@@ -27,10 +27,11 @@
         </div>
           <div id="hero">
 
-              <div id="hero-box">
-                <img class="hero-slide" src="Images/Hero-resized.jpg" alt="Web Store hero image">
-                <img class="hero-slide" src="Images/Hero-2-resized.jpg" alt="Web Store hero image">
-                <img class="hero-slide" src="Images/Hero-2.jpg" alt="Web Store hero image">
+              <div id="hero-box" class="slider-container">
+                <img class="slide" src="Images/Hero-resized.jpg" alt="Web Store hero image">
+                <img class="slide" src="Images/Hero-2-resized.jpg" alt="Web Store hero image">
+                <img class="slide" src="Images/Hero-3-resized.jpg" alt="Web Store hero image">
+                <img class="slide" src="Images/Hero-4-resized.jpg" alt="Web Store hero image">
                 </div>
 
             </div>
@@ -92,8 +93,6 @@
     </p>
     </section>
    
-
-
   </div>
   <div class="spacer">
 
@@ -102,7 +101,6 @@
 
   </main>
  
-
 <footer>
   <p><a href="home-page.html">Home</a></p>
   <P><a href="templates.html">Templates</a></P>
@@ -112,50 +110,27 @@
 
 <script>
 
- // Set the slideshow speed in milliseconds
- const slideshowSpeed = 7000;
+// var container = document.getElementById("slideshow-container");
+// var images = container.getElementsByTagName("img");
+// var index = 0;
 
-// Get all the hero-slide elements
-const slides = document.querySelectorAll(".hero-slide");
+// // Position the first image on screen, and the rest off-screen to the right
+// images[0].style.left = "0";
+// for (var i = 1; i < images.length; i++) {
+//   images[i].style.left = "100%";
+// }
 
-// Set the index of the current slide
-let slideIndex = 0;
+// function changeImage() {
+//   var nextPosition = -(index * 100) + "%";
+//   images[index].style.left = "100%";
+//   index++;
+//   if (index >= images.length) {
+//     index = 0;
+//   }
+//   images[index].style.left = "0";
+// }
 
-// Function to display the next slide
-function showNextSlide() {
-  // Get the current slide and hide it using a fade-out effect
-  const currentSlide = slides[slideIndex];
-  currentSlide.style.opacity = "0";
-  setTimeout(() => {
-    currentSlide.style.display = "none";
-    currentSlide.style.opacity = "1";
-  }, 500); // Set a 500ms transition for the fade-out effect
-
-  // Increment the slide index and reset it to 0 if we've reached the end of the slides
-  slideIndex++;
-  if (slideIndex >= slides.length) {
-    slideIndex = 0;
-  }
-
-  // Get the next slide and display it offscreen to the left
-  const nextSlide = slides[slideIndex];
-  nextSlide.style.display = "block";
-  nextSlide.style.opacity = "0";
-  nextSlide.style.transform = "translateX(-100%)";
-
-  // Use a setTimeout to give the browser time to update the display before applying the transition
-  setTimeout(() => {
-    // Slide the next slide into view using a slide-in effect and a fade-in effect
-    nextSlide.style.transform = "translateX(0%)";
-    nextSlide.style.opacity = "1";
-  }, 10);
-
-  // Set a timeout to call this function again after the slideshowSpeed has elapsed
-  setTimeout(showNextSlide, slideshowSpeed);
-}
-
-// Call the showNextSlide function to start the slideshow
-showNextSlide();
+// setInterval(changeImage, 5000);
 
 
 // last edit
